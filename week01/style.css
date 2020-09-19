@@ -1,0 +1,42 @@
+.login {
+    width: 300px;
+    margin: auto;
+}
+
+.login__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(' https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.login__title {
+    font-size: 40px;
+    color: white;
+}
+
+.login__content {
+    color: white;
+}
+
+.login__id,
+.login__pw
+{
+    display: flex;
+    align-items: center;
+}
+
+.login__id {
+    margin-bottom: 20px;
+}
+
+input {
+    height: 12px;
+}
