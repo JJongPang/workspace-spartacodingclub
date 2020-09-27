@@ -17,10 +17,25 @@ function checkMessage() {
   } else if (orderAddress.value === "") {
     alert("주소를 입력해주세요.");
   } else if (orderTel.value === "") {
-    alert("전화번호를 입력해주세요.");
+    telCheck();
   } else {
     alert(
       `주문자이름: ${orderName.value}\n수량: ${orderSelect.value}\n주소: ${orderAddress.value}\n전화번호: ${orderTel.value}`
     );
+  }
+}
+
+function telCheck(num) {
+  const list = [];
+  list.push(num);
+  const tel = list.split("");
+
+  for (i in tel) {
+    if (tel[3] === "-" && tel[8] === "-") {
+      alert("000 - 0000 - 0000");
+    }
+    if (orderTel.value === "") {
+      alert("전화번호를 입력해주세요");
+    }
   }
 }
