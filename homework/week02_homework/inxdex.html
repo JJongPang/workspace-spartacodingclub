@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week01 Homework</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <section class="shopping">
+      <div class="product__content">
+        <img
+          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20131001_110%2Fseul8413_1380620386752hqy3V_JPEG%2F%25C1%25B6%25B8%25BB%25B7%25D0-%25C0%25D7%25B1%25DB%25B8%25AE%25BD%25AC_%25C6%25E4%25BE%25EE_%25BE%25D8_%25C7%25C1%25B8%25AE%25C1%25F6%25BE%25C6_%25C4%25DA%25B7%25D5_-%25C1%25A6%25C7%25B0_%25C4%25C6.jpg&type=sc960_832"
+          alt="상품 이미지"
+        />
+        <div class="product__info">
+          <div class="product__column">
+            <h1 class="product__name">
+              <strong> 조말론 향수 </strong>
+            </h1>
+            <span class="product__price">가격: 165,000원 / 개</span>
+          </div>
+          <span class="product__explanation">
+            순수한 향. 블랙베리를 따던 어린 시절의 추억. 블랙베리로 물든 입술,
+            끈적해진 손. 이제 막 수확한 월계수 잎과 브램블리 우드의 신선함에
+            진하고 톡 쏘는 느낌의 블랙베리 과즙을 가미하였습니다. 생기 넘치고
+            활발한 느낌의 향수입니다.
+          </span>
+        </div>
+      </div>
+
+      <ul class="order__content">
+        <h1 class="order__name">
+          <strong>주문하기</strong>
+        </h1>
+        <li class="exchange__rage"></li>
+        <li class="order__item">
+          <label for="order-name" class="order__title">주문자이름:</label>
+          <input type="text" id="order-name" class="order__input" />
+        </li>
+        <li class="order__item">
+          <label for="order-quantity" class="order__title">수량:</label>
+          <select name="quantity" id="order-quantity" class="select__box">
+            <option value="수량선택" selected="selected">
+              -----수량선택-----
+            </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+        <li class="order__item">
+          <label for="order-address" class="order__title">주소:</label>
+          <input type="text" id="order-address" class="order__input" />
+        </li>
+        <li class="order__item">
+          <label for="order-tel" class="order__title">전화번호:</label>
+          <input type="tel" id="order-tel" class="order__input" />
+        </li>
+      </ul>
+
+      <button class="order__btn" onclick="checkMessage()">주문하기</button>
+    </section>
+  </body>
+</html>
