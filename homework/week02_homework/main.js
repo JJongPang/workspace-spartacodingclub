@@ -8,7 +8,7 @@ function checkMessage() {
   const orderAddress = $("#order-address");
   const orderTel = $("#order-tel");
 
-  var regPhone = /(01[0|1|6|9|7])[-](\d{3}|\d{4})[-](\d{4}$)/g;
+  const regPhone = /(01[0|1|6|9|7])[-](\d{3}|\d{4})[-](\d{4}$)/g;
 
   if (orderName.val() === "") {
     alert("주문자 이름을 입력해주세요");
