@@ -7,5 +7,6 @@ data = requests.get('https://www.genie.co.kr/chart/top200?ditc=D&rtm=N&ymd=20200
 
 soup = BeautifulSoup(data.text, 'html.parser')
 
-musics = soup.select('#body-content > div.newest-list > div > table > tbody > tr:nth-child(1) > td.info > a.title.ellipsis');
+musics = soup.select('#body-content > div.newest-list > div > table > tbody > tr')
+
 
